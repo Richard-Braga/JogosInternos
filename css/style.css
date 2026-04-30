@@ -1,9 +1,14 @@
-.conatiner {
+.containerBanner {
     display: flex;
     flex-direction: row;
     justify-content: start;
     gap: 2px 10px;
-    width: 100%;
-    background-color: lightblue;
-    height: 200%;
+    width: 100;
+    background-color: green;
+    height: 200;
+}
+
+.titulo {
+    align-content:flex-start;
+    color: darkgoldenrod;
 }
