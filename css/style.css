@@ -1,0 +1,9 @@
+.conatiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2px 10px;
+    width: 100%;
+    background-color: lightblue;
+    height: 200%;
+}
