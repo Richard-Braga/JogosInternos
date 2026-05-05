@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Gagalin';
+    src: url('../fontes/Gagalin-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fontes/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../fontes/Anton-Regular.ttf') format('truetype');
+}
+
+.titulo {
+    color: white;
+    font-size: 40px;
+    font-family: 'Gagalin';
+}
+
+.h2 {
+    font-size: 30px;
+    font-family: 'Anton'; 
+}
+
+.texto p {
+    width: 55%;
+    text-align: justify;
+    margin: 15px;
+}
+
+.texto-conteudo {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: black;
+}
