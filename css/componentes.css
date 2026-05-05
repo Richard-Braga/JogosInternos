@@ -1,0 +1,32 @@
+.containerNavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #024b28;
+    padding: 35px;
+}
+
+.containerBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a20000;
+    font-family: 'Gagalin';
+    font-size: 20px;
+    color: white;
+    padding: 35px
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 35px
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #024b28;
+    color: white;
+}
+
