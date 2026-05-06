@@ -1,20 +1,16 @@
 .containerNavBar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #024b28;
+    justify-content: center;
+    background-color: #021168;
     padding: 35px;
 }
 
-.containerBanner {
+.containerBanner img {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #a20000;
-    font-family: 'Gagalin';
-    font-size: 20px;
-    color: white;
-    padding: 35px
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
 }
 
 .container {

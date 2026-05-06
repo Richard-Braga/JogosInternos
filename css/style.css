@@ -8,10 +8,11 @@
 }
 
 body {
-    background-color: #f0ffdd;
+    background-color: #eff8ff;
 }
 
 .itensNav a {
+    align-itens: space-between;
     color: white;
     margin-left: 20px;
     text-decoration: none;
