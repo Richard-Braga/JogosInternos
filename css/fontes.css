@@ -13,15 +13,25 @@
     src: url('../fontes/Anton-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Firs Neue';
+    src: url('../fontes/TT\ Firs\ Neue\ Trial\ Bold.ttf');
+}
+
 .titulo {
     color: white;
     font-size: 40px;
-    font-family: 'Gagalin';
+    font-family: 'Firs Neue';
 }
 
 .h2 {
     font-size: 30px;
-    font-family: 'Anton'; 
+    font-family: 'Firs Neue'; 
+}
+
+h3 {
+    font-size: 25px;
+    font-family: 'Firs Neue';
 }
 
 .texto p {
@@ -34,4 +44,5 @@
     font-family: 'Montserrat';
     font-size: 20px;
     color: black;
+    padding-bottom:2%;
 }
