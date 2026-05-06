@@ -19,10 +19,20 @@
     padding: 35px
 }
 
-footer {
-    text-align: center;
-    padding: 25px;
-    background-color: #024b28;
-    color: white;
+.destaques {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
 
+.destaques ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin-top: 20px;
+    list-style-position: inside; 
+}
+
+.destaques h2 {
+    margin-bottom: 15px;
+}
