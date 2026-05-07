@@ -2,11 +2,12 @@
     display: flex;
     justify-content: center;
     background-color: #021168;
-    padding: 35px;
+    padding: 20px;
 }
 
 .containerBanner img {
     display: flex;
+    margin-bottom: 50px;
     width: 100%;
     height: auto;
     max-height: 350px;
@@ -22,7 +23,8 @@
 footer {
     text-align: center;
     padding: 25px;
-    background-color: #024b28;
+    margin-top: 50px;
+    background-color: #021168;
     color: white;
 }
 
