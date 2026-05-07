@@ -24,14 +24,21 @@ body {
     width: 160px;
 }
 
-
-.rodape {
+footer div {
+    width: 100%;
     text-align: center;
-    width: 90%;
-    margin: 0 auto;
+    padding: 25px;
+    background-color: #021168;
 }
 
-.rodape a {
+.rodape p {
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    
+}
+
+.rodape a{
     color: white;
     text-decoration: none;
 }
