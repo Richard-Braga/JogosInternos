@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     background-color: #021168;
+    flex-flow: row;
     padding: 35px;
 }
 
@@ -16,7 +17,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding: 35px
+    padding: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .destaques {
