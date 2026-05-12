@@ -43,7 +43,7 @@ footer div {
     text-decoration: none;
 }
 
-/* Cards */ 
+
 .cards-container { 
   display: flex; 
   justify-content: center; 
@@ -85,7 +85,140 @@ footer div {
 
 .galeria-projeto img:hover, .galeria img:hover { 
   transform: scale(1.05); 
+
 } 
+
+/* Centraliza a seção inteira na tela */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 50px 20px;
+    background-color: #f9f9fb; /* Um fundo leve para destacar os campos */
+}
+
+.formulario h2 {
+    margin-bottom: 30px;
+    color: #021168;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+/* Estilização do Formulário */
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px; 
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+}
+
+/* Grupos de campos (Label + Input) */
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left; 
+}
+
+.campo-grupo label {
+    font-weight: 600;
+    color: #333;
+}
+
+/* inputs e Textarea */
+.campo-grupo input, 
+.campo-grupo textarea {
+    padding: 12px 15px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito de foco (quando clica para digitar) */
+.campo-grupo input:focus, 
+.campo-grupo textarea:focus {
+    outline: none;
+    border-color: #021168;
+    box-shadow: 0 0 8px rgba(2, 17, 104, 0.2);
+}
+
+
+.botao-enviar {
+    background-color: #021168;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.botao-enviar:hover {
+    background-color: #031ba1;
+    transform: translateY(-2px); /* Efeito de levante */
+}
+
+/* Container dos Cards */
+.container-contatos-cards {
+    display: flex;
+    flex-wrap: wrap;         
+    justify-content: center; 
+    gap: 25px;               
+    padding: 40px 10%;      
+    width: 100%;
+}
+
+/* Estilo Individual de cada Card */
+.card-contato {
+    background-color: white;
+    border-top: 5px solid #021168; 
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    flex: 1;                
+    min-width: 280px;       
+    max-width: 350px;
+}
+
+.card-contato h3 {
+    color: #021168;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.card-contato p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Estilo dos links do Instagram dentro do card */
+.links-instagram {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.links-instagram a {
+    color: #021168;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.links-instagram a:hover {
+    text-decoration: underline;
+}
 
 .galeria-historico .cards-container {
     display: flex;
