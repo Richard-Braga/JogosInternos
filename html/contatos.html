@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
 
-     <header>
+    <header>
         <div class="containerNavBar"> 
             <nav class="itensNav">
                 <a href="index.html">Home</a>
@@ -19,7 +20,6 @@
                 <a href="historico.html">Histórico de jogos</a>
             </nav>
         </div>
-
     </header>
 
 
@@ -27,35 +27,63 @@
             <img  src="../images/jifal 2026.svg" alt="logo IFAL Arapiraca">
         </section>
 
-    <div class="contatos">
-    <section class="sessao-contato">
-        <h2>Contatos Oficiais</h2>
-        <div class="info-geral">
-            <p><strong>E-mail:</strong> contato.arapiraca@ifal.edu.br</p>
-            <p><strong>Telefone:</strong> (82) 3412-1234</p>
-            <p><strong>Endereço:</strong> Rodovia AL-115, Arapiraca - AL</p>
+ <section class="formulario">
+    <h2>Envie uma mensagem</h2>
+    <form class="formulario-contato">
+        <div class="campo-grupo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
         </div>
-    </section>
 
-    <section class="sessao-contato">
-        <h2>Instagram das Turmas</h2>
-        <div class="grid-instagram">
-            <div class="card-insta">
-                <span>Informática 2026</span>
-                <a href="https://www.instagram.com/913ifal_/" target="_blank">@913ifal_</a>
-            </div>
-
-            <div class="card-insta">
-                <span>Eletrotécnica 2026</span>
-                <a href="https://www.instagram.com/link_da_turma" target="_blank">@eletro_ifal</a>
-            </div>
-            
-            <div class="card-insta">
-                <span>Logística 2026</span>
-                <a href="https://www.instagram.com/link_da_turma" target="_blank">@log_ifal</a>
-            </div>
+        <div class="campo-grupo">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com">
         </div>
-    </section>
+
+        <div class="campo-grupo">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+        </div>
+
+        <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+    </form>
+</section>
+<section class="container-contatos-cards">
+    <div class="card-contato">
+        <h3>Campus Arapiraca - Direção Geral</h3>
+        <p>E-mail: campus.arapiraca@ifal.edu.br</p>
+
+        <h3>Campus Arapiraca - ASCOM</h3>
+        <p>E-mail: comunicacao.arapiraca@ifal.edu.br</p>
+        <p>Siga o campus Arapiraca no instagram:</p>
+         <a href="https://www.instagram.com/ifal.arapiraca/" target="_blank">@ifal.arapiraca</a>
+    </div>
+
+    <div class="card-contato">
+        <h3>Organização - JIFAL</h3>
+        <p>Professora Karinne Coelho</p>
+        <p>E-mail: karinne.coelho@ifal.edu.br</p>
+    </div>
+
+    <div class="card-contato">
+        <h3>Redes Sociais</h3>
+        <p>Siga as turmas no Instagram:</p>
+        <div class="links-instagram">
+            <a href="https://www.instagram.com/411.ifal/" target="_blank">@411.ifal</a>
+            <a href="https://www.instagram.com/412ifal/" target="_blank">@412ifal</a>
+            <a href="https://www.instagram.com/413.ifal_/" target="_blank">@413.ifal_</a>
+            <a href="https://www.instagram.com/422.ifall/" target="_blank">@422.ifall</a>
+            <a href="https://www.instagram.com/423ifal_/" target="_blank">@423ifal_</a>
+            <a href="https://www.instagram.com/521ifal/" target="_blank">@521ifal</a>
+            <a href="https://www.instagram.com/911.ifal/" target="_blank">@911.ifal</a>
+           <a href="https://www.instagram.com/ifal_912/" target="_blank">@ifal_912</a>
+           <a href="https://www.instagram.com/913ifal_/" target="_blank">@913ifal_</a>
+           <a href="https://www.instagram.com/921.ifal/" target="_blank">@921.ifal</a>
+           <a href="https://www.instagram.com/922.ifal/" target="_blank">@922.ifal</a>
+           <a href="https://www.instagram.com/923.ifal_/" target="_blank">@923.ifal_</a>
+        </div>
+    </div>
+</section>
     <footer>
         <div class="rodape">
             <p><strong>Instituição:</strong> Instituto Federal de Alagoas - Campus Arapiraca (IFAL).</p>
@@ -66,9 +94,6 @@
                 <a href="https://www.instagram.com/913ifal_/" target="_blank" rel="external">Instagram</a>
             </p>
         </div>
-    
-</body>
-</html>
-</main>
-</body>
-</html>
+    </footer>
+        
+    </body>

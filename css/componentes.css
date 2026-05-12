@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     background-color: #021168;
-    padding: 20px;
+    flex-flow: row;
+    padding: 35px;
 }
 
 .containerBanner img {
@@ -17,7 +18,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding: 35px
+    padding: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 footer {
@@ -39,3 +42,4 @@ footer {
 .destaques h2 {
     margin-bottom: 15px;
 }
+

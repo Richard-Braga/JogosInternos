@@ -74,16 +74,16 @@ footer div {
   margin-top: 20px;
 }
 
-.galeria-projeto img, .galeria-oficina img { 
-  width: 250px; /* VOLTOU AO TAMANHO ORIGINAL */
-  height: 180px; /* VOLTOU AO TAMANHO ORIGINAL */
+.galeria-projeto img, .galeria img { 
+  width: 250px;
+  height: 180px; 
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease;
 } 
 
-.galeria-projeto img:hover, .galeria-oficina img:hover { 
+.galeria-projeto img:hover, .galeria img:hover { 
   transform: scale(1.05); 
 } 
 
