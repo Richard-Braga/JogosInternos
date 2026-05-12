@@ -1,6 +1,3 @@
-@import url('fontes.css');
-@import url('componentes.css');
-
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +8,16 @@ body {
     background-color: #eff8ff;
 }
 
+/*----------------------------------------------------Containers----------------------------------------------*/
+.containerNavBar {
+    display: flex;
+    justify-content: center;
+    background-color: #021168;
+    flex-flow: row;
+    padding: 35px;
+    padding: 20px;
+}
+
 .itensNav a {
     color: white;
     margin-left: 20px;
@@ -18,9 +25,47 @@ body {
     font-weight: bold;
 }
 
+.containerBanner img {
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+}
 
-.logos img {
-    width: 160px;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-programacao {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    background-color: #021168;
+    color: white;
 }
 
 footer div {
@@ -29,6 +74,7 @@ footer div {
     padding: 25px;
     background-color: #021168;
 }
+
 
 .rodape p {
     text-align: center;
@@ -42,12 +88,133 @@ footer div {
     text-decoration: none;
 }
 
-/* Cards */ 
+.destaques ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin-top: 20px;
+    list-style-position: inside; 
+}
+
+.destaques h2 {
+    margin-bottom: 15px;
+}
+
+/*---------------------------------------------------------------TABELAS---------------------------------------------------------*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Montserrat';
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px;
+}
+
+thead th {
+    background-color: #0056b3;
+    color: white;
+    font-family: 'Firs Neue';
+}
+
+.linha-dia td {
+    background-color: #75b8ff;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.linha-intervalo td {
+    background-color:#f4f5f6;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.destaque-novidade {
+    background-color: #1672d4;
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/*----------------------------------------------------------Títulos------------------------------------------------------------*/
+@font-face {
+    font-family: 'Gagalin';
+    src: url('../fontes/Gagalin-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fontes/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../fontes/Anton-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Firs Neue';
+    src: url('../fontes/TT\ Firs\ Neue\ Trial\ Bold.ttf');
+}
+
+.titulo {
+    color: white;
+    font-size: 40px;
+    font-family: 'Firs Neue';
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Firs Neue'; 
+}
+
+h3 {
+    font-size: 25px;
+    padding-top: 20px;
+    font-family: 'Firs Neue';
+}
+
+.texto p {
+    width: 100%;
+    text-align: justify;
+    margin: 15px;
+}
+
+.texto-jogos {
+    width: 60%;
+}
+
+.texto-conteudo {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: black;
+    padding-bottom:2%;
+}
+
+.texto-conteudo p {
+    text-align: justify;
+    margin: 15px;
+    line-height: 1.5;
+}
+
+.texto-conteudo ul {
+    margin: 30px;
+}
+
+/*----------------------------------------------------------CARDS-------------------------------------------------------------*/
 .cards-container { 
   display: flex; 
-  justify-content: center; 
+  justify-content: center;
   flex-wrap: wrap; 
-  gap: 20px; 
+  gap: 20px;
   margin-top: 30px;
 } 
 
@@ -59,29 +226,163 @@ footer div {
   width: 100%;
   max-width: 300px;
   transition: transform 0.3s ease;
-} 
+}
+
+.card-dia {
+    flex: 1;
+    min-width: 280;
+    background-color:#021168;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3 ease;
+}
+
+.card-modalidade {
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    width: 100%;
+    max-width: 280px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.modalidades-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card-modalidade:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-modalidade-header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.card-modalidade-header .icone {
+    font-size: 42px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card-modalidade-header h3 {
+    font-family: 'Firs Neue', sans-serif;
+    font-size: 18px;
+    padding-top: 0;
+    color: white;
+}
+
+.card-modalidade-body {
+    padding: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.tag-categoria {
+    display: inline-block;
+    background-color: #eff8ff;
+    color: #0056b3;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-top: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.intro-modalidades {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.destaque-novidade-banner {
+    background-color: #021168;
+    color: white;
+    border-radius: 14px;
+    padding: 25px 30px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .card:hover {
   transform: translateY(-5px);
 }
 
-.galeria-projeto .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+.header-card {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
 
+.header-card h3 {
+    font-size: 20px;
+}
+
+.lista-atividades {
+    list-style: none;
+    padding: 20px;
+}
+
+.lista-atividades li {
+    padding: 10px;
+    border-bottom: 1px;
+    font-family: 'Montserrat';
+    font-size: 10px;
+}
+
+.galeria-projeto .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 .galeria-projeto img, .galeria-oficina img { 
-  width: 250px; /* VOLTOU AO TAMANHO ORIGINAL */
-  height: 180px; /* VOLTOU AO TAMANHO ORIGINAL */
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease;
+    width: 250px; /* VOLTOU AO TAMANHO ORIGINAL */
+    height: 180px; /* VOLTOU AO TAMANHO ORIGINAL */
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
 } 
 
 .galeria-projeto img:hover, .galeria-oficina img:hover { 
   transform: scale(1.05); 
 } 
+
+picture {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end
+}
+
+picture img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
