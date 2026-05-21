@@ -212,6 +212,10 @@ h3 {
     margin: 30px;
 }
 
+.texto-conteudo figure {
+    text-align: center;
+}
+
 /*----------------------------------------------------------CARDS-------------------------------------------------------------*/
 .cards-container { 
   display: flex; 
