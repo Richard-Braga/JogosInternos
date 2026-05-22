@@ -181,7 +181,7 @@ h2 {
 
 h3 {
     font-size: 25px;
-    padding-top: 20px;
+    padding-top: 10px;
     font-family: 'Firs Neue';
 }
 
@@ -366,8 +366,8 @@ h3 {
 
 
 .galeria-projeto img, .galeria-oficina img { 
-    width: 250px; /* VOLTOU AO TAMANHO ORIGINAL */
-    height: 180px; /* VOLTOU AO TAMANHO ORIGINAL */
+    width: 250px;
+    height: 180px;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
@@ -400,13 +400,12 @@ picture img{
   height: auto;
 }
 
-/* Centraliza a seção inteira na tela */
 .formulario {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza horizontalmente */
+    align-items: center;
     padding: 50px 20px;
-    background-color: #f9f9fb; /* Um fundo leve para destacar os campos */
+    background-color: #f9f9fb;
 }
 
 .formulario h2 {
@@ -416,7 +415,6 @@ picture img{
     text-transform: uppercase;
 }
 
-/* Estilização do Formulário */
 .formulario-contato {
     display: flex;
     flex-direction: column;
@@ -429,7 +427,6 @@ picture img{
     box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
 }
 
-/* Grupos de campos (Label + Input) */
 .campo-grupo {
     display: flex;
     flex-direction: column;
@@ -442,7 +439,6 @@ picture img{
     color: #333;
 }
 
-/* inputs e Textarea */
 .campo-grupo input, 
 .campo-grupo textarea {
     padding: 12px 15px;
@@ -452,7 +448,6 @@ picture img{
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Efeito de foco (quando clica para digitar) */
 .campo-grupo input:focus, 
 .campo-grupo textarea:focus {
     outline: none;
@@ -476,10 +471,9 @@ picture img{
 
 .botao-enviar:hover {
     background-color: #031ba1;
-    transform: translateY(-2px); /* Efeito de levante */
+    transform: translateY(-2px);
 }
 
-/* Container dos Cards */
 .container-contatos-cards {
     display: flex;
     flex-wrap: wrap;         
@@ -489,7 +483,6 @@ picture img{
     width: 100%;
 }
 
-/* Estilo Individual de cada Card */
 .card-contato {
     background-color: white;
     border-top: 5px solid #021168; 
@@ -513,7 +506,6 @@ picture img{
     color: #555;
 }
 
-/* Estilo dos links do Instagram dentro do card */
 .links-instagram {
     display: flex;
     flex-direction: column;
